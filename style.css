@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+    width: auto;
 }
 
 header {
@@ -37,6 +38,7 @@ nav ul li a {
 .section-padding {
     padding: 20px;
     text-align: center;
+    margin: 4rem;
 }
 
 .skills-container {
@@ -45,27 +47,57 @@ nav ul li a {
     flex-wrap: wrap;
 }
 
+#contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #003d82;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
 .skill-item {
     margin: 10px;
     padding: 10px;
-    background: #fff;
+    background: #d3e89c;
     border-radius: 5px;
     width: 200px;
     text-align: center;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.swiper-slide img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
 .swiper-container {
-    width: 100%;
+    width: 33%;
     padding-top: 20px;
 }
 
@@ -94,4 +126,80 @@ footer {
 
 footer {
     margin-top: 4rem;
+    background-color: #005f73;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer i {
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 100%;
+        margin: 10px 0;
+
+    }
+
+    .swiper-container {
+        width: 100%;
+        /* Full width for smaller screens */
+    }
+
+    #contact-form {
+        padding: 20px;
+        border-radius: 0;
+        /* Optional: Adjust for smaller screens */
+    }
+}
+
+/* Further adjustments for even smaller screens */
+@media (max-width: 480px) {
+
+    header h1,
+    header p {
+        margin: 10px 0;
+        /* Reduce margin for smaller screens */
+    }
+
+    .section-padding {
+        margin: 2rem 0;
+        /* Reduce the margin for smaller sections */
+    }
+
+    /* Adjust font sizes for smaller screens */
+    body,
+    p,
+    a {
+        font-size: 14px;
+        /* Smaller font size for better readability */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        /* Smaller headings */
+    }
+}
+
+/* Fix footer for mobile */
+@media (max-width: 768px) {
+    footer {
+        position: relative;
+        /* Change footer position on small devices */
+        margin-top: 2rem;
+    }
 }
