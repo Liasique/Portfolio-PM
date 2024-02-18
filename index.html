@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Olga Lukianets</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">À Propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>Olga Lukianets</h1>
+      <p>Développeuse Web & Chef de Projet E-Commerce</p>
+    </header>
+    <main>
+      <section id="about" class="section-padding">
+        <h2>À Propos de Moi</h2>
+        <p>
+          Passionnée par le développement web et la technologie, je m'engage
+          dans le secteur de l'informatique avec un intérêt marqué pour
+          l'apprentissage continu et l'innovation. Ma curiosité m'a menée à
+          explorer des langages de programmation clés tels que CSS, HTML,
+          JavaScript, TypeScript, et PHP, et à me familiariser avec des
+          frameworks avancés comme Symfony et React pour la création
+          d'applications web modernes.
+        </p>
+        <p>
+          Je m'intéresse également aux méthodologies Agile et Scrum, reflétant
+          mon engagement envers des pratiques de gestion de projet efficaces.
+          Mon exploration inclut la gestion de bases de données MySQL, la
+          conception d'interfaces utilisateur avec Figma, et une approche
+          proactive du marketing des médias sociaux (SMM), permettant une vision
+          globale des projets numériques.
+        </p>
+        <p>
+          Polyglotte, je navigue avec aisance en ukrainien, français, anglais,
+          et mandarin, prête à collaborer dans un environnement international.
+          Animée par la passion de transformer les idées en solutions numériques
+          concrètes, je suis à la recherche d'opportunités pour appliquer mes
+          compétences et contribuer à des projets innovants.
+        </p>
+      </section>
+      <section id="skills" class="section-padding">
+        <h2>Compétences</h2>
+        <div class="skills-container" data-aos="fade-up">
+          <div class="skill-item">
+            <i class="fas fa-code"></i> HTML, CSS, JavaScript, TypeScript, PHP
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-cogs"></i> Symfony, React
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-paint-brush"></i> UI/UX Design avec Figma
+          </div>
+          <div class="skill-item"><i class="fas fa-database"></i> MySQL</div>
+          <div class="skill-item"><i class="fas fa-chart-line"></i> SMM</div>
+          <div class="skill-item">
+            <i class="fas fa-users"></i> Agile, Scrum
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section-padding">
+        <h2>Projets</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-aos="fade-right">
+              <h3>Portfolio Web</h3>
+              <p>
+                Un projet de portfolio personnel développé avec React, montrant
+                mes compétences en développement frontend et en conception
+                UI/UX.
+              </p>
+              <a href="#" target="_blank">Voir le projet</a>
+            </div>
+            <div class="swiper-slide" data-aos="fade-right">
+              <h3>E-Commerce Platform</h3>
+              <p>
+                Une plateforme e-commerce construite avec Symfony et React,
+                intégrant des solutions de paiement sécurisées et une gestion
+                avancée des stocks.
+              </p>
+              <a href="#" target="_blank">Voir le projet</a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <section id="contact" class="section-padding">
+        <h2>Contact</h2>
+        <form id="contact-form" data-aos="fade-up">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Votre nom"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Votre email"
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Votre message"
+            required
+          ></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Trouvez-moi sur
+        <a href="https://www.linkedin.com/in/olga-lukianets/" target="_blank"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
